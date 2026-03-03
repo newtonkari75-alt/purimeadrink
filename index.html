@@ -1,43 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="de-DE">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- SEO Otimizado -->
+    <!-- SEO Optimierung -->
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <link rel="canonical" href="https://purimea.vercel.app/" />
 
-    <title>Purimea GLP-1 Drink – Suporte Natural ao Metabolismo e Controle de Peso</title>
-    <meta name="description" content="Purimea GLP-1 Drink: Fórmula inovadora para ativar o GLP-1 natural, apoiar a gestão de peso e saúde metabólica. Resultados podem variar." />
+    <title>Purimea GLP-1 Drink – Natürliche Unterstützung & Gewichtskontrolle</title>
+    <meta name="description" content="Aktivieren Sie Ihr natürliches GLP-1 mit Purimea. Mehr Kontrolle über Hungergefühl und Stabilität im Alltag." />
 
     <!-- Favicon -->
     <link rel="icon" href="images/purimea.png" type="image/png">
 
-    <!-- Dados Estruturados -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Purimea GLP-1 Drink",
-      "image": "https://purimea.vercel.app/images/purimea.png",
-      "description": "Suporte ao Controle de Peso Saudável e Função Metabólica.",
-      "brand": { "@type": "Brand", "name": "Purimea" },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://purimea.vercel.app/",
-        "priceCurrency": "CAD",
-        "price": "69.95",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-    </script>
-
-    <!-- Script Ornyxa -->
+    <!-- Ornyxa Script -->
     <script src="https://api.ornyxa.com/code/8300-ea43b289-faf0-42d3-990b-792c8e826b58" defer></script>
 
-    <!-- Fontes e Frameworks -->
+    <!-- Schriftarten und Frameworks -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -45,17 +26,13 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
-        /* Configurações Globais */
         body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
         .bg-purimea { background-color: #22804C; }
         .text-purimea { color: #22804C; }
-        .border-purimea { border-color: #22804C; }
         
-        /* Animações de Revelação */
-        .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1); }
+        .reveal { opacity: 0; transform: translateY(15px); transition: all 0.5s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
         
-        /* Botão com Pulsação */
         .btn-pulse-white {
             animation: pulse-shadow-white 2s infinite;
         }
@@ -65,7 +42,6 @@
             100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
         }
 
-        /* CTA Fixo no Mobile */
         .sticky-cta-mobile {
             transform: translateY(100%);
             transition: transform 0.4s ease-in-out;
@@ -74,325 +50,179 @@
             transform: translateY(0);
         }
 
-        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        
-        /* Barra de rolagem customizada */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #22804C; border-radius: 10px; }
+        .modal-body-content h4 { font-weight: 700; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1a202c; border-bottom: 1px solid #edf2f7; padding-bottom: 0.25rem; }
+        .modal-body-content p { margin-bottom: 1rem; line-height: 1.6; }
+        .modal-body-content ul { list-style-type: disc; padding-left: 1.5rem; margin-bottom: 1rem; }
+        .modal-body-content li { margin-bottom: 0.5rem; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-white text-gray-800">
 
-    <!-- Cabeçalho -->
-    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-[60] border-b border-gray-100">
-        <div class="container mx-auto px-4 h-16 flex justify-between items-center">
+    <!-- Header -->
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 h-12 md:h-14 flex justify-between items-center">
             <div class="flex items-center">
-                <!-- Logo Verde Escuro no Fundo Branco -->
-                <img src="images/purimea_logo1.png" alt="Purimea Logo" class="h-8 w-auto" onerror="this.outerHTML='<div class=\'font-black text-[#22804C] text-xl tracking-tighter\'>PURIMEA</div>';">
+                <img src="images/purimea_logo1.png" alt="Purimea Logo" class="h-6 md:h-8 w-auto object-contain" onerror="this.outerHTML='<div class=\'font-black text-[#22804C] text-lg md:text-xl tracking-tighter\'>PURIMEA</div>';">
             </div>
-            <div class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-gray-500">
-                <a href="#beneficios" class="hover:text-purimea transition-colors">Benefícios</a>
-                <a href="#como-funciona" class="hover:text-purimea transition-colors">Como Funciona</a>
-                <a href="#qualidade" class="hover:text-purimea transition-colors">Qualidade</a>
-            </div>
-            <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="bg-purimea text-white px-6 py-2 rounded-full text-xs font-bold hover:shadow-lg transition-all transform hover:-translate-y-0.5">
-                Comprar Agora
+            <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="bg-purimea text-white px-4 md:px-6 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-bold hover:opacity-90 transition-all">
+                Jetzt Kaufen
             </a>
         </div>
     </header>
 
-    <main class="pt-16">
-        <!-- Seção Hero -->
-        <section class="relative bg-purimea py-12 md:py-24 overflow-hidden min-h-[90vh] flex items-center">
-            <!-- Elementos Decorativos -->
-            <div class="absolute top-0 right-0 w-1/2 h-full bg-white/5 skew-x-12 translate-x-32 pointer-events-none"></div>
-            <div class="absolute bottom-[-10%] left-[-5%] w-64 h-64 bg-white/10 rounded-full blur-3xl pointer-events-none"></div>
-
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-purimea relative overflow-hidden pt-4 pb-8 md:pt-10 md:pb-16 min-h-[85vh] flex flex-col justify-center">
+            <div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 -skew-x-12 transform translate-x-20"></div>
+            
             <div class="container mx-auto px-4 relative z-10">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <!-- Texto e Chamada -->
-                    <div class="w-full md:w-1/2 text-center md:text-left text-white reveal active">
-                        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full mb-6 border border-white/20">
-                            <div class="flex">
-                                <i data-feather="star" class="w-3 h-3 fill-yellow-400 text-yellow-400"></i>
-                                <i data-feather="star" class="w-3 h-3 fill-yellow-400 text-yellow-400"></i>
-                                <i data-feather="star" class="w-3 h-3 fill-yellow-400 text-yellow-400"></i>
-                                <i data-feather="star" class="w-3 h-3 fill-yellow-400 text-yellow-400"></i>
-                                <i data-feather="star" class="w-3 h-3 fill-yellow-400 text-yellow-400"></i>
-                            </div>
-                            <span class="text-[10px] md:text-xs font-bold uppercase tracking-wider">Recomendado por Especialistas</span>
+                <div class="flex flex-col md:flex-row items-center gap-6 lg:gap-12">
+                    
+                    <!-- Linke Spalte: Inhalt -->
+                    <div class="w-full md:w-3/5 text-center md:text-left text-white reveal active">
+                        
+                        <!-- EXPERTEN-HINWEIS -->
+                        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full mb-4 border border-white/20">
+                            <span class="text-[10px] md:text-xs font-bold uppercase tracking-wide">⭐ Von Experten empfohlen</span>
                         </div>
 
-                        <h1 class="text-4xl md:text-5xl lg:text-7xl font-extrabold mb-6 leading-[1.05] tracking-tight">
-                            Ative seu <span class="text-green-300">GLP-1</span> Naturalmente.
+                        <!-- HEADLINE -->
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-3 leading-[1.1] tracking-tight">
+                            Aktivieren Sie Ihr natürliches GLP-1.
                         </h1>
                         
-                        <p class="text-lg md:text-xl mb-8 text-white/80 font-medium max-w-xl mx-auto md:mx-0 leading-relaxed">
-                            Uma revolução líquida inspirada na natureza. Purimea GLP-1 Drink ajuda a controlar o apetite, otimizar a queima de gordura e estabilizar sua energia.
+                        <!-- SUBHEADLINE -->
+                        <h2 class="text-xl md:text-2xl font-bold mb-4 text-green-200">
+                            Mehr Kontrolle über Ihr Hungergefühl. Mehr Stabilität im Alltag.
+                        </h2>
+                        
+                        <!-- BESCHREIBUNG -->
+                        <p class="text-sm md:text-base lg:text-lg mb-6 text-white/90 font-medium max-w-2xl mx-auto md:mx-0 leading-relaxed">
+                            Purimea GLP-1 Drink unterstützt das natürliche Sättigungssignal Ihres Körpers, hilft Heißhunger zu reduzieren und trägt zu einem ausgeglicheneren Energielevel bei.*
                         </p>
 
-                        <!-- Imagem do Produto Mobile -->
-                        <div class="md:hidden mb-8 relative">
-                            <img src="images/purimea.png" alt="Purimea GLP-1 Drink" class="w-56 mx-auto drop-shadow-2xl" onerror="this.src='https://via.placeholder.com/300x500/22804C/FFFFFF?text=PURIMEA+DRINK';">
+                        <!-- Mobile Produktbild -->
+                        <div class="md:hidden mb-6 relative">
+                            <img src="images/purimea.png" alt="Purimea GLP-1 Drink" class="relative w-48 mx-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]" onerror="this.src='https://via.placeholder.com/300x500/22804C/FFFFFF?text=PURIMEA+DRINK';">
                         </div>
 
+                        <!-- BULLETS -->
+                        <div class="space-y-3 mb-8">
+                            <div class="flex items-center gap-3 justify-center md:justify-start">
+                                <span class="text-base font-semibold tracking-tight">✔ 60 Tage Geld-zurück-Garantie</span>
+                            </div>
+                            <div class="flex items-center gap-3 justify-center md:justify-start">
+                                <span class="text-base font-semibold tracking-tight">✔ Schneller EU-Versand (3–5 Werktage)</span>
+                            </div>
+                            <div class="flex items-center gap-3 justify-center md:justify-start">
+                                <span class="text-base font-semibold tracking-tight">✔ Entwickelt & geprüft in Deutschland</span>
+                            </div>
+                        </div>
+
+                        <!-- BUTTONS -->
                         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                            <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="btn-pulse-white bg-white text-purimea px-10 py-5 rounded-full text-lg font-black shadow-2xl hover:scale-105 active:scale-95 transition-all text-center">
-                                Iniciar Meu Pedido
+                            <!-- Haupt-CTA (DTC) -->
+                            <a id="order" href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="btn-pulse-white bg-white text-purimea px-8 py-4 rounded-full text-lg font-extrabold shadow-2xl hover:-translate-y-1 transition-all text-center">
+                                Jetzt Bestellung starten – 64% sparen
                             </a>
-                            <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/" class="bg-transparent border-2 border-white/30 text-white px-10 py-5 rounded-full text-lg font-bold hover:bg-white/10 transition-all text-center">
-                                Fazer o Quiz Personalizado
+                            <!-- Sekundärer CTA (Quiz) -->
+                            <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/" class="bg-transparent border-2 border-white/40 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-white/10 transition-all text-center">
+                                Individuelle Empfehlung erhalten
                             </a>
                         </div>
-
-                        <div class="mt-8 flex items-center justify-center md:justify-start gap-4 text-white/60 text-xs font-bold uppercase tracking-widest">
-                            <span class="flex items-center gap-1"><i data-feather="shield" class="w-4 h-4"></i> 60 Dias de Garantia</span>
-                            <span class="flex items-center gap-1"><i data-feather="truck" class="w-4 h-4"></i> Envio Rápido</span>
-                        </div>
                     </div>
 
-                    <!-- Imagem Desktop -->
-                    <div class="hidden md:block md:w-1/2 relative reveal active">
-                        <div class="relative z-10 group">
-                            <img src="images/purimea.png" alt="Purimea Bottle" class="w-full max-w-md mx-auto drop-shadow-[0_35px_60px_rgba(0,0,0,0.6)] transform group-hover:rotate-2 transition-transform duration-700" onerror="this.src='https://via.placeholder.com/400x600/22804C/FFFFFF?text=PURIMEA+GLP1';">
-                        </div>
-                        <div class="absolute top-1/4 -right-4 glass p-4 rounded-2xl animate-bounce">
-                            <p class="text-[10px] font-bold text-white uppercase mb-1">Controle de Glicose</p>
-                            <div class="h-1 w-12 bg-green-400 rounded-full"></div>
-                        </div>
-                        <div class="absolute bottom-1/4 -left-4 glass p-4 rounded-2xl animate-pulse">
-                            <p class="text-[10px] font-bold text-white uppercase mb-1">Saciamento Prolongado</p>
-                            <div class="h-1 w-12 bg-green-300 rounded-full"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Grade de Benefícios -->
-        <section id="beneficios" class="py-20 bg-white">
-            <div class="container mx-auto px-4">
-                <div class="text-center max-w-3xl mx-auto mb-16 reveal">
-                    <h2 class="text-3xl md:text-4xl font-black text-purimea mb-4 uppercase tracking-tighter">A Ciência do GLP-1 em um Drink</h2>
-                    <p class="text-gray-500 font-medium">Fórmula líquida de alta absorção para resultados que você sente desde o primeiro gole.</p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:shadow-xl transition-all reveal">
-                        <div class="w-12 h-12 bg-purimea/10 rounded-2xl flex items-center justify-center mb-6">
-                            <i data-feather="droplet" class="text-purimea"></i>
-                        </div>
-                        <h3 class="text-xl font-extrabold text-purimea mb-3">Absorção Superior</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">A tecnologia líquida Purimea entra na corrente sanguínea mais rápido que cápsulas, ativando receptores metabólicos de forma mais eficiente.</p>
-                    </div>
-                    <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:shadow-xl transition-all reveal">
-                        <div class="w-12 h-12 bg-purimea/10 rounded-2xl flex items-center justify-center mb-6">
-                            <i data-feather="scissors" class="text-purimea"></i>
-                        </div>
-                        <h3 class="text-xl font-extrabold text-purimea mb-3">Corte de Fome</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Estimula a sinalização de saciedade no cérebro, reduzindo drasticamente o desejo por doces e lanches por impulso.</p>
-                    </div>
-                    <div class="p-8 rounded-3xl bg-gray-50 border border-gray-100 hover:shadow-xl transition-all reveal">
-                        <div class="w-12 h-12 bg-purimea/10 rounded-2xl flex items-center justify-center mb-6">
-                            <i data-feather="activity" class="text-purimea"></i>
-                        </div>
-                        <h3 class="text-xl font-extrabold text-purimea mb-3">Poder Metabólico</h3>
-                        <p class="text-gray-600 text-sm leading-relaxed">Ajuda a equilibrar os níveis de açúcar no sangue, incentivando o corpo a utilizar gordura estocada como fonte de energia.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Como Funciona -->
-        <section id="como-funciona" class="py-20 bg-slate-900 text-white overflow-hidden relative">
-            <div class="container mx-auto px-4 relative z-10">
-                <div class="flex flex-col lg:flex-row items-center gap-16">
-                    <div class="w-full lg:w-1/2 reveal">
-                        <h2 class="text-3xl md:text-5xl font-black mb-8 leading-tight tracking-tighter">Um Ritual Simples para Resultados Duradouros.</h2>
-                        <div class="space-y-8">
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-green-500 flex items-center justify-center font-bold text-green-500">1</div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-2">Dose Matinal</h4>
-                                    <p class="text-slate-400 text-sm">Misture uma dose em água pela manhã para despertar o metabolismo e preparar o corpo para o dia.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-green-500 flex items-center justify-center font-bold text-green-500">2</div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-2">Ativação GLP-1</h4>
-                                    <p class="text-slate-400 text-sm">Os nutrientes ativam os hormônios de saciedade naturais do seu corpo de forma contínua.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-6">
-                                <div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-green-500 flex items-center justify-center font-bold text-green-500">3</div>
-                                <div>
-                                    <h4 class="text-lg font-bold mb-2">Transformação Diária</h4>
-                                    <p class="text-slate-400 text-sm">Mantenha o uso diário para reprogramar sua resposta metabólica e ver mudanças reais.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="inline-block mt-12 bg-white text-purimea px-8 py-4 rounded-full font-black uppercase tracking-widest text-sm hover:bg-green-50 transition-colors">
-                            Garantir Meu Kit
-                        </a>
-                    </div>
-                    <div class="w-full lg:w-1/2 relative reveal">
-                        <div class="absolute inset-0 bg-green-500/20 blur-[120px] rounded-full"></div>
-                        <img src="images/purimea.png" alt="Purimea Drink" class="relative max-w-sm mx-auto drop-shadow-2xl brightness-110" onerror="this.src='https://via.placeholder.com/400x600/1e293b/FFFFFF?text=PURIMEA+DRINK';">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Seção de Qualidade -->
-        <section id="qualidade" class="py-20 bg-gray-50">
-            <div class="container mx-auto px-4">
-                <div class="bg-white rounded-[3rem] p-8 md:p-16 shadow-xl border border-gray-100 flex flex-col md:flex-row items-center gap-12 reveal">
-                    <div class="w-full md:w-1/3 text-center md:text-left">
-                        <h3 class="text-purimea text-2xl font-black mb-4 uppercase tracking-tighter">Padrões de Excelência</h3>
-                        <p class="text-gray-500 text-sm font-medium leading-relaxed">
-                            Purimea é produzido seguindo os mais rigorosos controles de qualidade, garantindo que cada dose ofereça a pureza e eficácia que sua saúde merece.
-                        </p>
-                    </div>
-                    <div class="w-full md:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-6">
-                        <div class="flex flex-col items-center text-center group">
-                            <div class="w-16 h-16 bg-green-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                                <i data-feather="leaf" class="text-green-600"></i>
-                            </div>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">100%<br>Natural</span>
-                        </div>
-                        <div class="flex flex-col items-center text-center group">
-                            <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                                <i data-feather="check-circle" class="text-blue-600"></i>
-                            </div>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Certificação<br>GMP</span>
-                        </div>
-                        <div class="flex flex-col items-center text-center group">
-                            <div class="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                                <i data-feather="flask-conical" class="text-purple-600"></i>
-                            </div>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Testado em<br>Laboratório</span>
-                        </div>
-                        <div class="flex flex-col items-center text-center group">
-                            <div class="w-16 h-16 bg-red-50 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                                <i data-feather="heart" class="text-red-600"></i>
-                            </div>
-                            <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest leading-tight">Sem Efeitos<br>Colaterais</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Final -->
-        <section class="py-24 bg-white">
-            <div class="container mx-auto px-4 text-center reveal">
-                <h2 class="text-4xl md:text-6xl font-black text-purimea mb-6 tracking-tighter uppercase italic">Redescubra Seu Corpo</h2>
-                <p class="text-gray-500 text-lg mb-10 max-w-2xl mx-auto font-medium">Junte-se a milhares de pessoas que estão transformando suas vidas com a ativação natural do GLP-1.</p>
-                <div class="flex flex-col items-center gap-6">
-                    <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="bg-purimea text-white px-12 py-6 rounded-full text-xl font-black shadow-[0_20px_40px_rgba(34,128,76,0.3)] hover:-translate-y-2 transition-all inline-block">
-                        Quero Meu Desconto Exclusivo
-                    </a>
-                    <div class="text-[10px] font-bold text-gray-400 uppercase tracking-widest flex gap-4">
-                        <span>Visa</span> • <span>Mastercard</span> • <span>Amex</span> • <span>PayPal</span>
+                    <!-- Rechte Spalte: Desktop-Bild -->
+                    <div class="hidden md:block md:w-2/5 relative reveal active">
+                        <div class="absolute -inset-10 bg-white/10 blur-[100px] rounded-full"></div>
+                        <img src="images/purimea.png" alt="Purimea Flasche" class="relative w-full max-w-sm lg:max-w-md mx-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.02] duration-700" onerror="this.src='https://via.placeholder.com/400x600/22804C/FFFFFF?text=PURIMEA+DRINK';">
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
-    <footer class="bg-slate-950 text-slate-400 py-16">
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
         <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-                <div class="col-span-1 md:col-span-2">
-                    <!-- Logo Verde Claro para Fundo Escuro -->
-                    <img src="images/purimea_logo.png" alt="Purimea Logo" class="h-8 mb-8" onerror="this.outerHTML='<div class=\'font-black text-white text-xl tracking-tighter mb-8\'>PURIMEA</div>';">
-                    <p class="text-sm leading-relaxed max-w-sm mb-6">
-                        Dedicada a fornecer soluções de saúde premium. Empoderando sua jornada de bem-estar com ciência inspirada na natureza e controle de qualidade rigoroso.
+            <div class="flex flex-col md:flex-row justify-between items-start gap-10 mb-10">
+                <div class="max-w-xs">
+                    <img src="images/purimea_logo.png" alt="Purimea" class="h-6 mb-6 brightness-0 invert opacity-80" onerror="this.outerHTML='<div class=\'font-black text-white text-xl tracking-tighter mb-6\'>PURIMEA</div>';">
+                    <p class="text-sm leading-relaxed">
+                        Wir widmen uns erstklassigen Gesundheitslösungen. Wir unterstützen Ihre Wellness-Reise mit von der Natur inspirierter Wissenschaft.
                     </p>
                 </div>
                 <div>
-                    <h5 class="text-white font-bold mb-6 text-xs uppercase tracking-widest">Recursos</h5>
-                    <ul class="space-y-4 text-[10px] font-bold uppercase tracking-[0.2em]">
-                        <li><button onclick="openModal('shipping')" class="hover:text-green-400 transition-colors">Envio e Devolução</button></li>
-                        <li><button onclick="openModal('terms')" class="hover:text-green-400 transition-colors">Termos de Uso</button></li>
-                        <li><button onclick="openModal('privacy')" class="hover:text-green-400 transition-colors">Privacidade</button></li>
-                        <li><button onclick="openModal('ingredients')" class="hover:text-green-400 transition-colors">Ingredientes</button></li>
+                    <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Richtlinien</h5>
+                    <ul class="space-y-3 text-xs font-bold uppercase tracking-widest">
+                        <li><button onclick="openModal('shipping')" class="hover:text-white transition-colors">Versand & Rückgabe</button></li>
+                        <li><button onclick="openModal('terms')" class="hover:text-white transition-colors">AGB</button></li>
+                        <li><button onclick="openModal('privacy')" class="hover:text-white transition-colors">Datenschutz</button></li>
+                        <li><button onclick="openModal('ingredients')" class="hover:text-white transition-colors">Inhaltsstoffe</button></li>
+                        <li><button onclick="openModal('contact')" class="hover:text-white transition-colors">Kontakt</button></li>
                     </ul>
                 </div>
                 <div>
-                    <h5 class="text-white font-bold mb-6 text-xs uppercase tracking-widest">Suporte</h5>
-                    <p class="text-xs font-bold text-white mb-2 tracking-widest">EMAIL</p>
-                    <p class="text-sm mb-4">suporte@purimea.com</p>
+                    <h5 class="text-white font-bold mb-4 text-sm uppercase tracking-widest">Kontakt</h5>
+                    <p class="text-sm mb-1">support@getpurimea.com</p>
+                    <p class="text-xs">Vivello Solutions Ltd.</p>
                 </div>
             </div>
 
-            <div class="border-t border-slate-900 pt-10 text-[10px] space-y-6 text-slate-600">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p>&copy; 2026 Purimea Health. Todos os direitos reservados.</p>
+            <div class="border-t border-slate-800 pt-8 text-[10px] space-y-4 text-slate-500">
+                <div class="flex flex-wrap gap-4">
+                    <p>&copy; 2026 Purimea Health (Vivello Solutions Ltd.). Alle Rechte vorbehalten.</p>
                 </div>
-                <p class="italic leading-relaxed">
-                    Aviso: Estes produtos não se destinam a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados não são típicos e nem todos experimentarão os mesmos efeitos. Sempre consulte seu médico antes de iniciar qualquer programa de suplementação.
+                
+                <p class="italic leading-relaxed pt-4 border-t border-slate-800/50">
+                    *Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung und einen gesunden Lebensstil. Dieses Produkt ist nicht zur Diagnose, Behandlung oder Heilung von Krankheiten bestimmt.
                 </p>
             </div>
         </div>
     </footer>
 
-    <!-- Botão Fixo Mobile -->
-    <div id="sticky-cta" class="sticky-cta-mobile fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-4 shadow-[0_-10px_40px_rgba(0,0,0,0.15)] z-[70] border-t border-gray-100 md:hidden">
-        <div class="flex items-center justify-between gap-4">
-            <div>
-                <p class="text-[9px] font-bold text-purimea uppercase tracking-tighter">Estoque Limitado</p>
-                <p class="text-xs font-black text-gray-900 tracking-tighter uppercase">Purimea GLP-1</p>
+    <!-- Sticky Mobile CTA -->
+    <div id="sticky-cta" class="sticky-cta-mobile fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-3 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] z-40 border-t border-gray-100 md:hidden">
+        <div class="flex items-center gap-4">
+            <div class="flex-1">
+                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tight">Zeitlich begrenztes Angebot</p>
+                <p class="text-xs font-black text-gray-900 tracking-tight uppercase">Purimea GLP-1 Drink</p>
             </div>
-            <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="bg-purimea text-white px-6 py-3 rounded-2xl font-black text-xs shadow-lg uppercase tracking-widest animate-pulse">
-                Comprar Agora
+            <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="bg-purimea text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg">
+                Jetzt Kaufen
             </a>
         </div>
     </div>
 
-    <!-- Modal Dinâmico -->
+    <!-- Dynamisches Modal -->
     <div id="dynamic-modal" class="fixed inset-0 z-[100] hidden">
-        <div class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm" onclick="closeModal()"></div>
-        <div class="fixed inset-4 md:inset-x-auto md:top-20 md:bottom-20 md:w-full md:max-w-2xl mx-auto bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col">
-            <div class="px-8 py-6 border-b border-gray-100 flex justify-between items-center bg-white sticky top-0 z-10">
-                <h3 class="font-black text-purimea text-sm uppercase tracking-widest" id="modal-title">Informação</h3>
+        <div class="fixed inset-0 bg-slate-900/90 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-4 md:inset-x-auto md:top-10 md:bottom-10 md:w-full md:max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+            <div class="px-6 py-4 border-b border-gray-100 flex justify-between items-center bg-white sticky top-0 z-10">
+                <h3 class="font-bold text-base md:text-lg text-[#22804C]" id="modal-title">Information</h3>
                 <button onclick="closeModal()" class="p-2 hover:bg-gray-100 rounded-full transition-colors"><i data-feather="x" class="w-5 h-5"></i></button>
             </div>
-            <div class="p-8 md:p-12 overflow-y-auto flex-1 text-sm text-gray-700 leading-relaxed space-y-4" id="modal-body"></div>
+            <div class="p-6 md:p-10 overflow-y-auto flex-1 text-xs md:text-sm text-gray-700 leading-relaxed modal-body-content" id="modal-body"></div>
         </div>
     </div>
 
     <script>
-        // Inicializa ícones do Feather
         feather.replace();
 
-        // Lógica de Revelação no Scroll
         function reveal() {
             const reveals = document.querySelectorAll(".reveal");
             const stickyCta = document.getElementById("sticky-cta");
-            const windowHeight = window.innerHeight;
-
             reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
                 const elementTop = el.getBoundingClientRect().top;
-                if (elementTop < windowHeight - 80) {
-                    el.classList.add("active");
-                }
+                if (elementTop < windowHeight - 50) el.classList.add("active");
             });
-
-            if (window.scrollY > 400) {
-                stickyCta.classList.add("visible");
-            } else {
-                stickyCta.classList.remove("visible");
-            }
+            if (window.scrollY > 300) stickyCta.classList.add("visible");
+            else stickyCta.classList.remove("visible");
         }
-
         window.addEventListener("scroll", reveal);
         reveal();
 
-        // Lógica do Modal
         function closeModal() {
             document.getElementById('dynamic-modal').classList.add('hidden');
             document.body.style.overflow = 'auto';
@@ -401,29 +231,68 @@
         function openModal(type) {
             const modalData = {
                 'shipping': {
-                    title: 'Envio e Devolução',
-                    body: `<p>Oferecemos envio expresso para todo o país. O prazo de entrega varia de 3 a 7 dias úteis dependendo da sua localização. Aceitamos devoluções em até 60 dias para pedidos fechados ou em conformidade com nossa garantia de satisfação.</p>`
+                    title: 'Versand- und Rückerstattungsrichtlinie',
+                    body: `
+                        <p>Version gültig ab dem 12. Mai 2025</p>
+                        <h4>1. Versand & Lieferung</h4>
+                        <p><strong>1.1 Bearbeitungs- & Lieferzeiten</strong><br>Alle Bestellungen werden innerhalb von 1 bis 3 Werktagen bearbeitet. Die Lieferung dauert in der Regel 2 bis 14 Werktage, je nach Zielort. Sobald Ihre Bestellung versendet wurde, erhalten Sie eine E-Mail-Bestätigung mit einem Tracking-Link.</p>
+                        <p><strong>1.2 Versandkosten & Zollgebühren</strong><br>Die Versandkosten werden beim Checkout berechnet. Zollgebühren und Einfuhrsteuern liegen in der Verantwortung des Kunden.</p>
+                        <h4>2. Auftragsänderungen & Stornierungen</h4>
+                        <p>Bestellungen können nur storniert werden, sofern sie noch nicht bearbeitet oder versendet wurden. Senden Sie eine E-Mail an support@getpurimea.com.</p>
+                        <h4>3. Rücksendungen & Erstattungen</h4>
+                        <p><strong>3.1 Rückgabeberechtigung:</strong> Defekte Artikel oder falsche Lieferungen.</p>
+                        <p><strong>60-Tage-Geld-zurück-Garantie:</strong> Wenn Sie nicht zufrieden sind, kontaktieren Sie uns innerhalb von 60 Tagen. Es dürfen maximal zwei Flaschen geöffnet worden sein (Zwei-Monats-Vorrat). Alle leeren Flaschen müssen zurückgeschickt werden. Versandkosten werden nicht erstattet.</p>
+                        <p><strong>3.2 Rückgabeprozess:</strong> Kontaktieren Sie support@getpurimea.com für Ihre Rücksende-ID. Ohne ID keine Zuordnung möglich.<br>Adresse: Shipbob, Kanaalzone 2, Havenweg 16, 6006 SM Weert, Netherlands.</p>
+                    `
                 },
                 'privacy': {
-                    title: 'Política de Privacidade',
-                    body: `<p>Sua privacidade é nossa prioridade. Utilizamos criptografia SSL para garantir que seus dados de pagamento e pessoais estejam 100% seguros. Não compartilhamos suas informações com terceiros.</p>`
+                    title: 'Datenschutzerklärung',
+                    body: `
+                        <h4>1. GELTUNGSBEREICH</h4>
+                        <p>Diese Richtlinie gilt für personenbezogene Daten, die auf der Website erhoben werden, die im Besitz von oder kontrolliert wird durch Vivello Solutions Ltd. Der Verantwortliche ist Vivello Solutions Ltd.</p>
+                        <h4>2. WELCHE PERSONENBEZOGENEN DATEN ERHEBEN WIR?</h4>
+                        <p>Wenn Sie einen Einkauf tätigen: Name, Adresse, Telefonnummer und E-Mail-Adresse. Wir speichern eine Aufzeichnung finanzieller Transaktionen, aber keine Kreditkartendaten direkt.</p>
+                        <h4>3. WIE WERDEN IHRE DATEN VERWENDET?</h4>
+                        <p>Zur Bereitstellung bestellter Produkte und zur Identitätsüberprüfung.</p>
+                        <h4>4. ÜBERMITTLUNG</h4>
+                        <p>Daten können an verbundene Unternehmen in den USA übertragen werden, sofern diese im Rahmen des Privacy Shield oder vergleichbarer Schutzmaßnahmen registriert sind.</p>
+                    `
                 },
                 'terms': {
-                    title: 'Termos de Uso',
-                    body: `<p>Ao utilizar este site e adquirir Purimea, você declara ter mais de 18 anos. Recomendamos que grávidas, lactantes ou pessoas com condições médicas pré-existentes consultem um médico antes de usar.</p>`
+                    title: 'Allgemeine Geschäftsbedingungen',
+                    body: `
+                        <h4>Allgemeines</h4>
+                        <p>Diese Geschäftsbedingungen gelten für alle Verträge der Fa. Vivello Solutions Ltd., 7 Compton Street, Ashbourne, Derbyshire, GB-DE61BX United Kingdom.</p>
+                        <p>Die Geschäftsbeziehungen unterliegen dem Recht der Bundesrepublik Deutschland. Vertragssprache ist deutsch.</p>
+                        <h4>Vertragsschluss</h4>
+                        <p>Der Kaufvertrag kommt durch die Annahme der Bestellung des Kunden durch den Verkäufer zustande. Der Verkäufer ist berechtigt, das Angebot innerhalb von 2 Werktagen anzunehmen.</p>
+                        <h4>Preise & Zahlung</h4>
+                        <p>Preise inkl. MwSt. zzgl. Versandkosten. Belieferung erfolgt gegen Vorkasse über verschiedene Dienstleister (PayPal, Klarna, Kreditkarte, etc.).</p>
+                        <h4>Eigentumsvorbehalt</h4>
+                        <p>Waren bleiben bis zur vollständigen Zahlung Eigentum des Verkäufers.</p>
+                    `
                 },
                 'ingredients': {
-                    title: 'Ingredientes e Nutrição',
+                    title: 'Inhaltsstoffe & Qualität',
                     body: `
-                        <div class="border-2 border-black p-4 font-sans">
-                            <h4 class="font-black text-xl border-b-4 border-black pb-1 mb-2">Fatos do Suplemento</h4>
-                            <p class="text-xs mb-2">Porção: 1 Dose Líquida | Porções por Frasco: 30</p>
-                            <div class="pl-4 text-xs space-y-2">
-                                <p><strong>• Ativador GLP-1 Proprietário:</strong> Mistura de fibras solúveis e extratos botânicos selecionados.</p>
-                                <p><strong>• Micronutrientes:</strong> Cromo e Vitaminas do complexo B para suporte energético.</p>
-                                <p><strong>• Antioxidantes:</strong> Extrato de Chá Verde concentrado.</p>
-                            </div>
-                        </div>
+                        <p>Purimea GLP-1 Drink basiert auf einer proprietären Mischung aus natürlichen Pflanzenextrakten und Mikronährstoffen:</p>
+                        <ul>
+                            <li><strong>Berberin-Extrakt:</strong> Bekannt für seine stoffwechselunterstützenden Eigenschaften.</li>
+                            <li><strong>Zichorienwurzel-Inulin:</strong> Ein löslicher Ballaststoff für die Verdauung.</li>
+                            <li><strong>Chrom-Picolinat:</strong> Trägt zur Aufrechterhaltung eines normalen Blutzuckerspiegels bei.</li>
+                            <li><strong>B-Vitamin-Komplex:</strong> Unterstützt den Energiestoffwechsel.</li>
+                        </ul>
+                        <p>Entwickelt und geprüft in Deutschland nach höchsten Qualitätsstandards.</p>
+                    `
+                },
+                'contact': {
+                    title: 'Kontakt & Kundenservice',
+                    body: `
+                        <p>Wir sind von Montag bis Freitag von 9:00 bis 18:00 Uhr GMT für Sie da.</p>
+                        <p><strong>E-Mail:</strong> support@getpurimea.com</p>
+                        <p><strong>Telefon:</strong> +49 40 7430 2972</p>
+                        <p><strong>Anschrift:</strong><br>VIVELLO SOLUTIONS LTD<br>7 Compton Street, Ashbourne, Derbyshire, United Kingdom, DE6 1BX</p>
+                        <p>Füllen Sie alternativ das Formular auf unserer Hilfe-Seite aus.</p>
                     `
                 }
             };
