@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de-DE">
 <head>
-    <!-- ========= SEO / TECH HEAD START (DE) ========= -->
+    <!-- ========= INÍCIO DO CABEÇALHO SEO / TECH (DE) ========= -->
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
@@ -10,24 +10,24 @@
     <meta name="color-scheme" content="light only" />
     <meta name="theme-color" content="#22804C" />
 
-    <!-- Indexing -->
+    <!-- Indexação -->
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-    <!-- Canonical -->
+    <!-- Canônico -->
     <link rel="canonical" href="https://www.purimeadrink.shop/" />
 
-    <!-- Locale / Language -->
+    <!-- Idioma / Localização -->
     <meta http-equiv="content-language" content="de-DE" />
     <link rel="alternate" href="https://www.purimeadrink.shop/" hreflang="de-DE" />
     <link rel="alternate" href="https://www.purimeadrink.shop/" hreflang="x-default" />
 
-    <!-- Title / Description -->
+    <!-- Título e Descrição SEO -->
     <title>Purimea GLP-1 Drink – 64% Rabatt | Natürliches Sättigungsgefühl Unterstützen</title>
-    <meta name="description" content="Purimea GLP-1 Drink: Unterstützt das natürliche Sättigungsgefühl, hilft Heißhunger zu reduzieren und trägt zu einem stabileren Energielevel bei. 64% Rabatt auf das Bestseller-Paket." />
+    <meta name="description" content="Purimea GLP-1 Drink: Unterstützt das natürliche Sättigungsgefühl, hilft Heißhunger zu reduzieren und trägt zu einem stabileren Energielevel bei. 64% Rabatt." />
     <meta name="keywords" content="Purimea, Purimea GLP-1 Drink, GLP-1 Drink, Sättigungsgefühl, Heißhunger reduzieren, Appetitkontrolle, Nahrungsergänzungsmittel, Deutschland" />
 
-    <!-- Open Graph -->
+    <!-- Open Graph (Redes Sociais) -->
     <meta property="og:type" content="product" />
     <meta property="og:site_name" content="Purimea" />
     <meta property="og:locale" content="de_DE" />
@@ -36,10 +36,10 @@
     <meta property="og:description" content="Unterstützt das natürliche Sättigungsgefühl. Kostenloser EU-Versand & 60 Tage Geld-zurück-Garantie." />
     <meta property="og:image" content="https://www.purimeadrink.shop/images/purimea.png" />
 
-    <!-- Gateraads Script -->
+    <!-- Script de Rastreamento Gateraads -->
     <script src="https://cdn.gateraads.com/code/8300-250be466-74fc-4fbf-ab35-edc1e09ee37c"></script>
 
-    <!-- JSON-LD Structured Data -->
+    <!-- Dados Estruturados JSON-LD (SEO Orgânico) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -49,7 +49,7 @@
           "@id": "https://www.purimeadrink.shop/#product",
           "name": "Purimea GLP-1 Drink",
           "brand": { "@type": "Brand", "name": "Purimea" },
-          "description": "Purimea GLP-1 Drink unterstützt das natürliche Sättigungsgefühl, hilft Heißhunger zu reduzieren und trägt zu einem ausgeglicheneren Energielevel bei.",
+          "description": "Unterstützt das natürliche Sättigungsgefühl und hilft Heißhunger zu reduzieren.",
           "category": "Nahrungsergänzungsmittel",
           "offers": {
             "@type": "AggregateOffer",
@@ -77,7 +77,7 @@
     }
     </script>
 
-    <!-- UI Frameworks -->
+    <!-- Frameworks de UI e Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -85,26 +85,35 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
+        /* Estilos Globais */
         body { font-family: 'Montserrat', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
         .bg-purimea { background-color: #22804C; }
         .text-purimea { color: #22804C; }
+        
+        /* Animações */
         .reveal { opacity: 0; transform: translateY(15px); transition: all 0.5s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Pulsação do Botão Principal */
         .btn-pulse-white { animation: pulse-shadow-white 2s infinite; }
         @keyframes pulse-shadow-white {
             0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5); }
             70% { box-shadow: 0 0 0 15px rgba(255, 255, 255, 0); }
             100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
         }
+
+        /* CTA Fixo Mobile */
         .sticky-cta-mobile { transform: translateY(100%); transition: transform 0.4s ease-in-out; }
         .sticky-cta-mobile.visible { transform: translateY(0); }
-        .modal-body-content h4 { font-weight: 700; margin-top: 1rem; margin-bottom: 0.5rem; color: #1a202c; border-bottom: 1px solid #edf2f7; }
+
+        /* Estilo do Conteúdo dos Modais */
+        .modal-body-content h4 { font-weight: 700; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #1a202c; border-bottom: 1px solid #edf2f7; }
         .modal-body-content p { margin-bottom: 0.75rem; line-height: 1.5; }
     </style>
 </head>
 <body class="bg-white text-gray-800">
 
-    <!-- Header -->
+    <!-- Cabeçalho de Navegação -->
     <header class="sticky top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
         <div class="container mx-auto px-4 h-12 md:h-14 flex justify-between items-center">
             <div class="flex items-center">
@@ -117,16 +126,24 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Secção Hero -->
         <section class="bg-purimea relative overflow-hidden pt-4 pb-8 md:pt-10 md:pb-16 min-h-[85vh] flex flex-col justify-center">
             <div class="absolute top-0 right-0 w-1/3 h-full bg-white/5 -skew-x-12 transform translate-x-20"></div>
             
             <div class="container mx-auto px-4 relative z-10">
                 <div class="flex flex-col md:flex-row items-center gap-6 lg:gap-12">
                     
+                    <!-- Conteúdo Principal -->
                     <div class="w-full md:w-3/5 text-center md:text-left text-white reveal active">
-                        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full mb-4 border border-white/20">
-                            <span class="text-[10px] md:text-xs font-bold uppercase tracking-wide">⭐ Von Experten empfohlen</span>
+                        <div class="flex flex-col gap-2 mb-4">
+                            <!-- EXPERTEN-HINWEIS -->
+                            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 self-center md:self-start w-fit">
+                                <span class="text-[10px] md:text-xs font-bold uppercase tracking-wide">⭐ Von Experten empfohlen</span>
+                            </div>
+                            <!-- Tag do Shop Oficial - Agora entre o selo e o título -->
+                            <p class="text-[10px] md:text-xs font-bold uppercase tracking-widest text-white/70">
+                                Purimea™ Offizieller Shop - Natürliches Sättigungsgefühl
+                            </p>
                         </div>
 
                         <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-2 leading-[1.1] tracking-tight">
@@ -141,16 +158,19 @@
                             Schluss mit dem ständigen Kampf gegen den Heißhunger. Während andere noch mit Disziplin kämpfen, nutzen Sie die Kraft der Natur. Purimea GLP-1 Drink hilft Ihnen, die "Zucker-Falle" zu verlassen, das Sättigungsgefühl zu beschleunigen und endlich wieder die Kontrolle über Ihren Körper zu übernehmen.*
                         </p>
 
+                        <!-- Foto do Produto no Mobile -->
                         <div class="md:hidden mb-6 relative">
-                            <img src="images/purimea.png" alt="Purimea GLP-1 Drink Flasche" class="relative w-48 mx-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]" onerror="this.src='https://via.placeholder.com/300x500/22804C/FFFFFF?text=PURIMEA+DRINK';">
+                            <img src="images/purimea.png" alt="Purimea GLP-1 Drink" class="relative w-48 mx-auto drop-shadow-[0_15px_30px_rgba(0,0,0,0.4)]" onerror="this.src='https://via.placeholder.com/300x500/22804C/FFFFFF?text=PURIMEA+DRINK';">
                         </div>
 
+                        <!-- Benefícios Rápidos -->
                         <div class="space-y-2 mb-8 text-sm md:text-base font-semibold">
                             <div class="flex items-center gap-3 justify-center md:justify-start">✔ 60 Tage Geld-zurück-Garantie</div>
                             <div class="flex items-center gap-3 justify-center md:justify-start">✔ Schneller EU-Versand (3–5 Werktage)</div>
                             <div class="flex items-center gap-3 justify-center md:justify-start">✔ Entwickelt & geprüft in Deutschland</div>
                         </div>
 
+                        <!-- Botões de Ação -->
                         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                             <a id="order" href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="btn-pulse-white bg-white text-purimea px-8 py-4 rounded-full text-lg font-extrabold shadow-2xl hover:-translate-y-1 transition-all text-center">
                                 Jetzt 64% sparen
@@ -161,47 +181,56 @@
                         </div>
                     </div>
 
+                    <!-- Foto do Produto no Desktop -->
                     <div class="hidden md:block md:w-2/5 relative reveal active">
                         <div class="absolute -inset-10 bg-white/10 blur-[100px] rounded-full"></div>
-                        <img src="images/purimea.png" alt="Purimea GLP-1 Drink Packung" class="relative w-full max-w-sm lg:max-w-md mx-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.02] duration-700" onerror="this.src='https://via.placeholder.com/400x600/22804C/FFFFFF?text=PURIMEA+DRINK';">
+                        <img src="images/purimea.png" alt="Purimea GLP-1 Drink" class="relative w-full max-w-sm lg:max-w-md mx-auto drop-shadow-[0_30px_50px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.02] duration-700" onerror="this.src='https://via.placeholder.com/400x600/22804C/FFFFFF?text=PURIMEA+DRINK';">
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer Compact -->
-    <footer class="bg-slate-900 text-slate-400 py-6">
+    <!-- Rodapé Compacto -->
+    <footer class="bg-slate-900 text-slate-400 py-8">
         <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-6">
-                <div class="text-center md:text-left">
-                    <img src="images/purimea_logo.png" alt="Purimea Logo Weiß" class="h-5 mb-3 brightness-0 invert opacity-80 mx-auto md:mx-0" onerror="this.outerHTML='<div class=\'font-black text-white text-lg tracking-tighter mb-2\'>PURIMEA</div>';">
-                    <p class="text-[10px] leading-relaxed max-w-xs">
-                        Premium-Gesundheitslösungen basierend auf naturinspirierter Wissenschaft.
+            <div class="flex flex-col md:flex-row justify-between items-start gap-8 mb-6">
+                <div class="max-w-xs text-center md:text-left mx-auto md:mx-0">
+                    <img src="images/purimea_logo.png" alt="Purimea Logo" class="h-5 mb-4 brightness-0 invert opacity-80 mx-auto md:mx-0" onerror="this.outerHTML='<div class=\'font-black text-white text-xl tracking-tighter mb-4\'>PURIMEA</div>';">
+                    <p class="text-[10px] leading-relaxed">
+                        Premium-Gesundheitslösungen basierend auf naturinspirierter Wissenschaft. Hergestellt für maximale Wirkung.
                     </p>
                 </div>
-                <div class="flex flex-wrap justify-center gap-4 text-[10px] font-bold uppercase tracking-widest">
-                    <button onclick="openModal('shipping')" class="hover:text-white transition-colors">Versand & Rückgabe</button>
-                    <button onclick="openModal('terms')" class="hover:text-white transition-colors">AGB</button>
-                    <button onclick="openModal('privacy')" class="hover:text-white transition-colors">Datenschutz</button>
-                    <button onclick="openModal('contact')" class="hover:text-white transition-colors">Kontakt</button>
+                <div>
+                    <h5 class="text-white font-bold mb-3 text-xs uppercase tracking-widest">Richtlinien</h5>
+                    <ul class="space-y-2 text-[11px] font-bold uppercase tracking-widest">
+                        <li><button onclick="openModal('shipping')" class="hover:text-white transition-colors">Versand & Rückgabe</button></li>
+                        <li><button onclick="openModal('terms')" class="hover:text-white transition-colors">AGB</button></li>
+                        <li><button onclick="openModal('privacy')" class="hover:text-white transition-colors">Datenschutz</button></li>
+                        <li><button onclick="openModal('contact')" class="hover:text-white transition-colors">Impressum</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-3 text-xs uppercase tracking-widest">Kontakt</h5>
+                    <p class="text-xs mb-1">support@getpurimea.com</p>
+                    <p class="text-[10px] opacity-70">Vivello Solutions Ltd.</p>
                 </div>
             </div>
 
-            <div class="border-t border-slate-800 pt-4 text-[9px] text-slate-500 text-center md:text-left">
-                <p class="mb-3">&copy; 2026 Purimea Health (Vivello Solutions Ltd.). Alle Rechte vorbehalten. 7 Compton Street, Ashbourne, United Kingdom.</p>
-                <p class="italic leading-relaxed border-t border-slate-800/50 pt-2">
-                    *Haftungsausschluss: Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung. Dieses Produkt ist kein Medikament (wie Semaglutid) und dient nicht der Heilung von Krankheiten. Ergebnisse variieren individuell.
+            <div class="border-t border-slate-800 pt-6 text-[9px] text-slate-500 text-center md:text-left">
+                <p class="mb-4">&copy; 2026 Purimea Health (Vivello Solutions Ltd.). Alle Rechte vorbehalten. 7 Compton Street, Ashbourne, United Kingdom.</p>
+                <p class="italic leading-relaxed border-t border-slate-800/50 pt-3">
+                    *Haftungsausschluss: Nahrungsergänzungsmittel sind kein Ersatz für eine ausgewogene Ernährung. Dieses Produkt ist kein Medikament (wie Semaglutid) und dient nicht der Heilung von Krankheiten. GLP-1 bezieht sich auf die natürliche Unterstützung körpereigener hormoneller Prozesse durch Pflanzenstoffe. Ergebnisse variieren individuell.
                 </p>
             </div>
         </div>
     </footer>
 
-    <!-- Sticky Mobile CTA -->
+    <!-- CTA Mobile Fixo -->
     <div id="sticky-cta" class="sticky-cta-mobile fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md p-3 shadow-[0_-10px_30px_rgba(0,0,0,0.1)] z-40 border-t border-gray-100 md:hidden">
         <div class="flex items-center gap-4">
             <div class="flex-1">
-                <p class="text-[9px] font-bold text-gray-400 uppercase tracking-tight">Aktion endet bald</p>
+                <p class="text-[10px] font-bold text-gray-400 uppercase tracking-tight">Angebot endet bald</p>
                 <p class="text-xs font-black text-gray-900 tracking-tight uppercase">Purimea GLP-1</p>
             </div>
             <a href="https://www.knownwalk.com/2JCZKZ1X/22JHBZM6/?uid=5163" class="bg-purimea text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-lg">
@@ -210,7 +239,7 @@
         </div>
     </div>
 
-    <!-- Modals -->
+    <!-- Modais Dinâmicos -->
     <div id="dynamic-modal" class="fixed inset-0 z-[100] hidden">
         <div class="fixed inset-0 bg-slate-900/90 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-4 md:inset-x-auto md:top-10 md:bottom-10 md:w-full md:max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col">
@@ -247,19 +276,19 @@
             const modalData = {
                 'shipping': {
                     title: 'Versand- und Rückerstattungsrichtlinie',
-                    body: `<h4>1. Versand</h4><p>Bearbeitung 1-3 Tage. Lieferung EU 3-5 Werktage. Kostenloser Versand ab Bestseller-Paket.</p><h4>2. Rückgabe</h4><p>60-Tage-Geld-zurück-Garantie. Es dürfen maximal 2 Flaschen geöffnet sein. Kontaktieren Sie support@getpurimea.com vor der Rücksendung.</p>`
+                    body: `<h4>1. Versand</h4><p>Bearbeitung 1-3 Tage. Lieferung EU 3-5 Werktage.</p><h4>2. Rückgabe</h4><p>60-Tage-Geld-zurück-Garantie. Kontaktieren Sie support@getpurimea.com.</p>`
                 },
                 'privacy': {
                     title: 'Datenschutzerklärung',
-                    body: `<p>Verantwortlich: Vivello Solutions Ltd. Wir erheben Daten zur Bestellabwicklung und Identitätsprüfung. Tracking-Tools (Gateraads) werden zur Optimierung genutzt.</p>`
+                    body: `<p>Verantwortlich: Vivello Solutions Ltd. Wir erheben Daten gem. DSGVO.</p>`
                 },
                 'terms': {
                     title: 'Allgemeine Geschäftsbedingungen',
-                    body: `<p>Geltung für alle Käufe über purimeadrink.shop. Es gilt deutsches Recht. Vertragsschluss erfolgt durch Annahme der Bestellung durch Vivello Solutions Ltd.</p>`
+                    body: `<p>Geltung für alle Käufe über purimeadrink.shop. Es gilt deutsches Recht.</p>`
                 },
                 'contact': {
-                    title: 'Kontakt & Impressum',
-                    body: `<p><strong>Email:</strong> support@getpurimea.com</p><p><strong>Adresse:</strong> Vivello Solutions Ltd, 7 Compton Street, Ashbourne, UK.</p><p><strong>Support:</strong> Mo-Fr, 9-18 Uhr.</p>`
+                    title: 'Impressum & Kontakt',
+                    body: `<p><strong>Email:</strong> support@getpurimea.com</p><p><strong>Adresse:</strong> Vivello Solutions Ltd, 7 Compton Street, Ashbourne, UK.</p>`
                 }
             };
             const data = modalData[type];
